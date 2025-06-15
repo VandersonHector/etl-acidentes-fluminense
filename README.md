@@ -9,9 +9,10 @@ Projeto que implementa um pipeline ETL para processar dados de acidentes na rodo
 - Git  
 
 ## Estrutura do Projeto
+```text
 etl-acidentes-fluminense/
-├── data/
-│   └── demostrativo_acidentes_afl.csv  (amostra de 1000 linhas)
+├── Data/
+│   └── demostrativo_acidentes_afl.csv (amostra de 1000 linhas)
 ├── src/
 │   └── etl_pipeline.py
 ├── sql/
@@ -20,6 +21,8 @@ etl-acidentes-fluminense/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+```
+
 
 ## Como Executar
 1. Instale Python e PostgreSQL.  

@@ -95,6 +95,23 @@ def visualize_data(df):
     plt.savefig('acidentes_por_tipo.png')
     plt.close()
 
+# Passo 5: Visualização - Quantidade de acidentes por ano
+def visualize_acidentes_por_ano(df):
+    print("Gerando visualização de acidentes por ano...")
+    # Extrair o ano da coluna data_acidente
+    df['ano'] = df['data_acidente'].dt.year
+    # Contar acidentes por ano
+    acidentes_por_ano = df.groupby('ano').size()
+    
+    plt.figure(figsize=(10, 6))
+    acidentes_por_ano.plot(kind='bar')
+    plt.title('Quantidade de Acidentes por Ano na Autopista Fluminense (2010-2019)')
+    plt.xlabel('Ano')
+    plt.ylabel('Número de Acidentes')
+    plt.xticks(rotation=0)
+    plt.tight_layout()
+    plt.savefig('acidentes_por_ano.png')
+    plt.close()
 
 def main():
     file_path = r'C:\Users\vande\Documents\DS Arquivos\etl-acidentes-fluminense\Data\demostrativo_acidentes_af.csv'

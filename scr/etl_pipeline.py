@@ -98,6 +98,7 @@ def visualize_data(df):
 
 def main():
     file_path = r'C:\Users\vande\Documents\DS Arquivos\etl-acidentes-fluminense\Data\demostrativo_acidentes_af.csv'
+
     df = extract_data(file_path)
     df_transformed = transform_data(df)
     load_data(df_transformed, 'acidentes_fluminense')

@@ -120,6 +120,7 @@ def main():
     df_transformed = transform_data(df)
     load_data(df_transformed, 'acidentes_fluminense')
     visualize_data(df_transformed)
+    visualize_acidentes_por_ano(df_transformed)
 
 if __name__ == '__main__':
     main()

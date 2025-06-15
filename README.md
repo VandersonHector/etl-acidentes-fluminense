@@ -1,7 +1,7 @@
 # Pipeline ETL para Análise de Acidentes na Autopista Fluminense
 
 ## Descrição
-Este projeto implementa um pipeline ETL (Extract, Transform, Load) para processar dados de acidentes na rodovia Autopista Fluminense, obtidos do Portal de Dados Abertos da ANTT. Os dados abrangem o período de 2010 a 2019, contendo 52.061 registros e 23 colunas. O pipeline extrai dados de um arquivo CSV, realiza tratamentos como limpeza de valores nulos, padronização de formatos de data e horário, e remoção de duplicatas. Os dados processados são carregados em um banco PostgreSQL, e duas visualizações são geradas: uma exibindo os cinco tipos de acidentes mais frequentes e outra mostrando a quantidade de acidentes por ano. Este projeto foi desenvolvido como parte do meu portfólio para demonstrar habilidades em engenharia de dados.
+Este projeto implementa um pipeline ETL (Extract, Transform, Load) para processar dados de acidentes na rodovia Autopista Fluminense, obtidos do Portal de Dados Abertos da ANTT. Os dados abrangem o período de 2010 a 2019, contendo 52.061 registros e 23 colunas. O pipeline extrai dados de um arquivo CSV, realiza tratamentos como limpeza de valores nulos, padronização de formatos de data e horário, e remoção de duplicatas. Os dados processados são carregados em um banco PostgreSQL, e duas visualizações são geradas: uma exibindo os cinco tipos de acidentes mais frequentes e outra mostrando a quantidade de acidentes por ano.
 ## Tecnologias
 - Python (pandas, psycopg2, matplotlib)  
 - PostgreSQL  

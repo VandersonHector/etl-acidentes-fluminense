@@ -1,1 +1,2 @@
-*.pyc pycache/ venv/ *.csv .env
+*.pyc pycache/ venv/ *.csv .env.venv/
+.venv/

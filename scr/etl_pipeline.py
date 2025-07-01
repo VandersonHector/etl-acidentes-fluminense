@@ -2,14 +2,18 @@ import pandas as pd
 import psycopg2
 from sqlalchemy import create_engine
 import matplotlib.pyplot as plt
+from dotenv import load_dotenv
+import os
 
 # Configurações do banco de dados
+load_dotenv()
+
 db_config = {
-    'user': 'postgres',  
-    'password': 'passWord11', 
-    'host': 'localhost',
-    'port': '5432',
-    'database': 'acidentes_fluminense_db'
+    'user': os.getenv('DB_USER'),
+    'password': os.getenv('DB_PASSWORD'),
+    'host': os.getenv('DB_HOST'),
+    'port': os.getenv('DB_PORT'),
+    'database': os.getenv('DB_NAME')
 }
 
 # Extração
